@@ -1,0 +1,23 @@
+Password:
+bycryptjs
+
+
+SIGNIN JWT
+
+
+// Authentication
+// user relationship model
+// db> cloud > mongodb atlas
+
+
+>owner
+>userSchema.virtual('taskRel',{
+    ref:'Task',
+    localField:"_id",// user_id 
+    foreignField:"owner"
+})
+
+
+MONGO_URL=mongodb+srv://poonam:poonam@cluster0.lukkhw2.mongodb.net/fsdwd56
+# MONGO_URL=mongodb://127.0.0.1:27017/newmongoosefsdwd56
+PORT=8000
